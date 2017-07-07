@@ -40,8 +40,8 @@
 						meanNavPush: "", // set a height here in px, em or % if you want to budge your layout now the navigation is missing.
 						meanShowChildren: true, // true to show children in the menu, false to hide them
 						meanExpandableChildren: true, // true to allow expand/collapse children
-						meanExpand: "", // single character you want to represent the expand for ULs
-						meanContract: "", // single character you want to represent the contract for ULs
+						meanExpand: "+", // single character you want to represent the expand for ULs
+						meanContract: "-", // single character you want to represent the contract for ULs
 						meanRemoveAttrs: false, // true to remove classes and IDs, false to keep them
 						onePage: false, // set to true for one page sites
 						meanDisplay: "block", // override display method for table cell based layouts e.g. table-cell

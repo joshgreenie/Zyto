@@ -61,7 +61,9 @@ if (!is_active_sidebar('sidebar-1')) {
                 <?= $cta_link_text_small ? "<span class='small-cta-small'><h5>$cta_link_text_small</h5></span>" : "" ?>
                 </a>
             </div>
-            <span class="disclaimer"><p><? echo do_shortcode($disc) ?></p></span>
+    <?php if($disc):?><span class="disclaimer"><? echo do_shortcode($disc) ?></span><?php endif;?>
+
+
         </div>
 
 

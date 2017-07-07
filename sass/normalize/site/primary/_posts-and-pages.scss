@@ -179,6 +179,7 @@ h4 {
 
 .widget:first-of-type {
   margin-top: 0;
+  padding-top:0;
 }
 
 a.previouspostslink {
@@ -216,7 +217,7 @@ a.nextpostslink {
   }
 
   span.current {
-    color: $dark_blue;
+    background: $light_blue;
   }
 }
 

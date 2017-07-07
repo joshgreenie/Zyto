@@ -10,6 +10,14 @@
       @include j-column(1/2, 0, 2, 10);
 
 
+
+
+      @media screen and (max-width: $breakpoint-small-tablet) {
+        @include j-column(1/1, 0, 1, 1);
+        margin-bottom: 10px;
+      }
+
+
       p {
         font-size: 1.2rem;
       }

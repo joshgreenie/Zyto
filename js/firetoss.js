@@ -62,7 +62,30 @@
             autoplay: false,
             items: 5,
             nav: true,
-            navText: ["<span class='owl-nav-prev'></span>", "<span class='owl-nav-next'></span>"]
+            navText: ["<span class='owl-nav-prev'></span>", "<span class='owl-nav-next'></span>"],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 3,
+                },
+                980: {
+                    items: 5,
+                }
+            }
+        });
+
+
+
+        $('.search-trigger').on('click', function (e) {
+            e.stopPropagation();
+            $('.search-trigger').addClass('active')
+            $('.search-trigger .search-field').focus();
+        });
+
+        $(document).on('click', function (e) {
+            $('.search-trigger').removeClass('active');
         });
 
 
@@ -74,7 +97,7 @@
 
         $("i.fa-th").click(function () {
 
-            $('div.menu-dashboard-container').addClass("active");
+            $('div.menu-dashboard-container').toggleClass("active");
             // $('div.menu-dashboard-container').css('visibility', 'visible');
 
         });

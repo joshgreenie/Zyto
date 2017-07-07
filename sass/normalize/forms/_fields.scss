@@ -98,11 +98,15 @@ body {
                 margin-top: 20px !important;
               }
 
-              input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), textarea.textarea {
+              input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+              textarea.textarea,
+              select {
                 padding: 5px 15px 5px 30px;
                 margin: 0;
                 border-radius: 0;
                 border: 1px solid black;
+                color: #666;
+                text-transform: uppercase;
               }
 
 

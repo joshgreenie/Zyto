@@ -61,9 +61,11 @@ $header_underline = get_sub_field('header_underline');
                     <?php } ?>
                 </div>
             </div>
+<!--            --><?php //if($image):?>
             <div
                 class="content-opposite-<?= $content_position ?> fw-opposite" <?php echo $image ? "style='background-image:url($image);'" : ""; ?>>
             </div>
+<!--            --><?php //endif; ?>
         </div>
     </div>
 

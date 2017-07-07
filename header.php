@@ -66,7 +66,7 @@ echo $code2 ? "$code2" : ""; ?>
             <nav id="site-navigation" class="main-navigation" role="navigation">
                 <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu', 'walker' => new Custom_Walker_Nav_Menu())); ?>
                 <!--                --><?php //wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')) ?>
-                <i class="fa fa-search" aria-hidden="true"><?php get_search_form(); ?></i>
+                <div class="search-trigger" ><i class="fa fa-search" aria-hidden="true"></i><?php get_search_form(); ?></div>
                 <?php wp_nav_menu(array('theme_location' => 'dashboard', 'menu_id' => 'dashboard')) ?>
             </nav><!-- #site-navigation -->
         </div>

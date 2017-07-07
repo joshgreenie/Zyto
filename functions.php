@@ -393,7 +393,18 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 
 
+function wpdocs_my_search_form( $form ) {
+    $form = '<form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="' . get_search_query() . '" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="'. esc_attr__( 'Go' ) .'">
+			</form>';
 
+    return $form;
+}
+add_filter( 'get_search_form', 'wpdocs_my_search_form' );
 
 /**
  * Implement the Custom Header feature.

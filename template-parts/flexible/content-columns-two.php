@@ -21,10 +21,11 @@ $background_image = get_sub_field('background_image');
             class="column-image" <?= $background_image ? "style=background-image:url($background_image)" : "" ?> ></div>
         <div class="column-inner-content">
                             <?= $subheader ? "<span id='column-subheader'>$subheader</span>" : "" ?>
-            <?php if ($link) { ?>
+            <?php if ($link_text) { ?>
                 <span id='column-cta'><a href='<?= $link ?>'><h3><?= $link_text ?></h3></a></span>
             <?php } ?>
         </div>
     </div>
 </div>
 <?php endwhile ?>
+

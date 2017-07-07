@@ -375,16 +375,45 @@ span.fa.fa-play-circle-o.fa-4x {
 
 .home {
   div#postTitle:after {
-    right: -645px;
-    width: calc(100% + 196px);
+    //right: -645px;
+    width: calc(100% + 197px);
+    bottom: 20px;
+    border-top-left-radius: 10px;
+
+    @media screen and (max-width: 1500px){
+      width: calc(100% + 150px);
+      bottom: 0px;
+    }
+    @media screen and (max-width: 1200px){
+
+      width: calc(100% + 268px);
+      bottom: -2px;
+    }
   }
 
+
   div#postTitlewrap:after {
-    height: calc(50% + 462px);
-    left: calc(50% + 171px);
-  }
+    height: calc(50% + 460px);
+    left: calc(50% + 166px);
+    border-bottom-right-radius: 10px;
+
+    @media screen and (max-width: 1500px){
+
+        height: calc(50% + 429px);
+        left: calc(50% + 190px);
+      }
+    @media screen and (max-width: 1200px){
+
+      left: calc(50% + 165px);
+    }
+    }
 
   h1.hero-title .bottom-title {
     padding-top: 25px;
+    @media screen and (max-width: 1500px){
+    padding-top: 50px;
+
+    }
   }
 }
+

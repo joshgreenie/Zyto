@@ -45,12 +45,16 @@
             <?php if (is_single()) :
                 the_title('<h3 class="entry-title">', '</h3>');
                 posted_by();
-                endif; ?>
+
+                endif;
+                $thumb = get_the_post_thumbnail_url();
+                if($thumb):?>
                 <span id="blog-post-image">
                      <img src="<?php the_post_thumbnail_url(); ?>">
                 </span>
-
-                <div class="blog-post-content-wrapper">
+<?php
+                endif;?>
+            <div class="blog-post-content-wrapper">
 
                     <?php
                     if (! is_single()) :

@@ -144,6 +144,11 @@ ul.tabs-controller {
           @include j-column(1/2, 0, 2, 1);
         }
 
+
+        @media screen and (max-width: $breakpoint-small-tablet) {
+          @include j-column(1/1, 0, 1, 1);
+        }
+
         &:last-of-type {
           /*   margin-right: auto;
              margin-left: 30px; */

@@ -37,7 +37,7 @@ if (have_rows('columns_repeater')): ?>
         <?php if ($link || $subheader ) { ?>
                             <div class="column-inner-content">
                                 <?= $subheader ? "<span id='column-subheader'>$subheader</span>" : "" ?>
-                                <?php if ($link) { ?>
+                                <?php if ($link_text) { ?>
                                     <span id='column-cta'><a href='<?= $link ?>'><h3><?= $link_text ?></h3></a></span>
                                 <?php } ?>
                             </div>

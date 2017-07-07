@@ -30,3 +30,39 @@
 .full-width-content.content-position-right > .cta-wrapper {
   flex-direction: row;
 }
+
+.cta-content {
+  width: 75%;
+}
+
+.home h1.hero-title .bottom-title {
+  text-align: center;
+}
+
+//.hero-bottom-content {
+//  width: 100% !important;
+//  text-align: center;
+//}
+//
+//.hero-bottom-content * {
+//  text-align: center !important;
+//}
+
+
+.triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content {
+  width: calc(100% - 60px);
+}
+
+.left-content,.right-content {
+  padding-bottom: 1px;
+}
+
+
+.blog-meta-wrapper {
+  width: 150px;
+  min-width: 150px;
+}
+
+span#blog-post-image {
+  width: 200px;
+}
