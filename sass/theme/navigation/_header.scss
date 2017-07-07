@@ -1,0 +1,135 @@
+/************************************
+*    WP ADMIN BAR ADJUSTMENT MARGIN!
+***********************************/
+
+.logged-in.admin-bar header#masthead {
+  margin-top: 32px;
+}
+
+/************************************/
+
+
+
+.banner-wrapper {
+  background-color: $dark_blue;
+  position: relative;
+  z-index: 999;
+
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+  }
+
+  .banner-right {
+    span {
+      padding: 2px 35px;
+      font-size: 1.1em;
+      text-transform: uppercase;
+    }
+
+    i.fa.fa-phone {
+      color: #fff;
+      font-size: 1.1em;
+    }
+  }
+}
+
+span#phone {
+  position: relative;
+  padding-left: 15px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    background-color: #fff;
+    height: 19px;
+    right: 0;
+    top: 27%;
+  }
+}
+
+span#sign-in {
+  padding-right: 0 !important;
+}
+
+div#postTitlewrap h2 {
+  margin: 0;
+}
+
+header#masthead {
+
+  border-bottom: 5px solid $med_blue;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+
+  > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+div#content {
+  margin-top: 129px;
+}
+
+.site-branding {
+  margin: 10px;
+  width: 250px !important;
+}
+
+@media (max-width: 980px) {
+  form.search-form {
+    display: none !important;
+  }
+
+  i.fa.fa-search {
+    display: none !important;
+  }
+
+  span.dots {
+    display: none !important;
+  }
+}
+
+.geo-test-content {
+  display: flex;
+}
+
+.geo-test-content > div {
+  margin: auto;
+  padding: 5rem;
+}
+
+.geo-test-content > div * {
+  margin: 10px 0;
+}
+
+.geo-test-content > div h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: $dark_blue;
+}
+
+.geo-test-content > div {
+  text-align: center;
+}
+

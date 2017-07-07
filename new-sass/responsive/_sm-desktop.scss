@@ -1,0 +1,32 @@
+.full-width-wrapper .fw-opposite {margin-top: 40px;background-size: contain;}
+
+.full-width-content.content-position-left {
+  width: calc(100% - 00px);
+}
+
+.full-width-wrapper > .container,
+.full-width-wrapper.right > .container {
+  flex-direction: column-reverse;
+}
+
+
+.full-width-content.content-position-right .large-cta:before {
+  content: none !important;
+}
+
+.full-width-content.content-position-left .large-cta:before {
+  content: none !important;
+}
+
+.full-width-content .cta-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.full-width-content.content-position-right {
+  width: 100%;
+}
+
+.full-width-content.content-position-right > .cta-wrapper {
+  flex-direction: row;
+}

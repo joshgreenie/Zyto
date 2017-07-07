@@ -1,0 +1,240 @@
+
+.triangles-bg-wrapper {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 70px 0;
+  overflow: hidden;
+
+  .triangles-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    justify-content: center;
+
+    @media screen and (max-width: 1500px) {
+      padding: 30px 0;
+    }
+
+    .triangle {
+
+      width: 38.5%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      min-height: 481px;
+
+      margin: 0 -135px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      @media screen and (max-width: 1500px) {
+        width: 41.5%;
+        min-height: 410px;
+        margin: 0 -55px;
+      }
+
+      .triangle-content {
+        width: 50%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1500px) {
+          width: 52%;
+        }
+
+        span#tri-header {
+          width: 70%;
+          display: block;
+          margin: auto;
+          color: #4973a3;
+          position: relative;
+
+          h3 {
+            font-size: 1.6em;
+            font-weight: 100;
+            position: relative;
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              width: calc(100% + 20px);
+              height: 1px;
+              background-color: #4973a3;
+              left: -10px;
+            }
+          }
+        }
+
+        span#tri-subheader {
+          p {
+            font-size: 1.2em;
+            margin: 0;
+            color: #4973a3;
+          }
+        }
+      }
+
+      &:nth-of-type(even) {
+        justify-content: flex-end;
+        margin-bottom: -15px;
+        width: 40%;
+        margin: 10px -146px -15px -146px;
+
+        @media screen and (max-width: 1500px) {
+          width: 43%;
+          margin: 10px -186px -15px -184px;
+        }
+      }
+
+      &:nth-of-type(even) > .triangle-content {
+        span#tri-header {
+          width: 50%;
+        }
+        span#tri-subheader {
+          width: 85%;
+          display: block;
+          margin: auto;
+
+          @media screen and (max-width: 1500px) {
+            padding-bottom: 10px;
+          }
+
+        }
+      }
+
+      &:nth-of-type(odd) > span#icon {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  .tri-link-wrapper {
+    text-align: center;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 1500px) {
+      padding: 2rem 0;
+    }
+
+    span#tri-link {
+      padding: 10px 100px;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 1000%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 0;
+        bottom: 60%;
+        left: 100%;
+      }
+      &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 1000%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 0;
+        bottom: 60%;
+        right: 100%;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        display: inline-flex;
+        line-height: 1;
+      }
+      img {
+        padding-left: 50px;
+        margin-right: -50px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .triangles-bg-wrapper .triangles-wrapper .triangle:nth-of-type(even) > .triangle-content span#tri-subheader {
+    padding-bottom: 10px;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content {
+    width: 45%;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle:nth-of-type(even) {
+    width: 56%;
+    margin: 0px -260px -5px -260px;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle {
+    width: 46.5%;
+    min-height: 380px;
+    margin: 0 5px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .triangles-bg-wrapper > .container {
+    max-width: 100%;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper {
+    flex-direction: column;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle {
+    width: 100%;
+    background-image: none !important;
+    min-height: 0;
+    background-color: rgba(153, 204, 235, .75);
+    margin: 1rem 0;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle:nth-of-type(even) {
+    width: 100%;
+    margin: 0;
+  }
+
+  .triangles-bg-wrapper {
+    margin: 2rem 0;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper {
+    padding: 1rem 0;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content {
+    width: calc(100% - 400px);
+    padding: 1.5rem 0;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle > span#icon {
+    display: none;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content span#tri-subheader p {
+    padding-bottom: 2rem;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content span#tri-header h3 {
+    font-size: 1.8rem;
+    color: $dark_blue;
+    font-weight: 600;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content span#tri-header h3:after {
+    background-color: $dark_blue;
+  }
+
+  .triangles-bg-wrapper .triangles-wrapper .triangle .triangle-content span#tri-subheader p {
+    color: $dark_blue;
+  }
+}

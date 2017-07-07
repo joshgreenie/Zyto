@@ -1,0 +1,390 @@
+div#imageTitle {
+  background-repeat: no-repeat;
+  min-width: 100%;
+  position: relative;
+  min-height: 600px;
+  background-size: cover;
+
+  @media screen and (max-width: 1500px) {
+    min-height: 500px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    min-height: 420px;
+  }
+}
+
+div#postTitle {
+  width: 961px;
+  height: calc(100% + 130px);
+  position: absolute;
+  background-size: initial;
+  background-repeat: no-repeat;
+  left: calc(50% - 860px);
+
+  @media screen and (max-width: 1500px) {
+    left: calc(50% - 840px);
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 715px;
+    height: calc(100% + 50px);
+    left: calc(50% - 650px);
+    background-size: contain;
+  }
+  @media screen and (max-width: 980px) {
+    background-image: url(img/mobile-bg.jpg) !important;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $med_blue;
+    width: calc(100% + 204px);
+    height: 6px;
+    right: -637px;
+    bottom: 0px;
+
+    @media screen and (max-width: 1500px) {
+      width: calc(100% + 150px);
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: calc(100% + 282px);
+    }
+
+  }
+}
+
+.hero-header {
+  width: 100%;
+  overflow: hidden;
+}
+
+div#postTitlewrap {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  h2 {
+    font-size: 2.1em;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 0;
+    padding-top: 25px;
+    color: $dark_blue;
+
+    @media screen and (max-width: 1500px) {
+      padding-top: 3rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 1.9rem;
+      padding-top: 2rem;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $med_blue;
+    width: 6px;
+    height: calc(50% + 476px);
+    left: calc(50% + 163px);
+    top: -60px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(30deg);
+
+    @media screen and (max-width: 1500px) {
+      top: -64px;
+      height: calc(50% + 426px);
+      left: calc(50% + 191px);
+    }
+  }
+
+}
+
+span#hh-sub1 {
+  p {
+    font-size: 1.4em;
+    max-width: 70%;
+    margin: auto;
+    padding-top: 15px;
+    line-height: 1.6;
+    color: $dark_blue;
+
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $med_blue;
+    height: 1px;
+    width: 240px;
+    left: 38%;
+
+    @media screen and (max-width: 1200px) {
+      left: 34%;
+    }
+  }
+}
+
+h1.hero-title,
+h2.hero-title {
+  margin: 0;
+
+  .bottom-title {
+    padding-top: 45px;
+    text-align: right;
+    font-size: 3rem;
+    color: $light_blue;
+  }
+
+  .bottom-title-2nd {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 3rem;
+    color: $light_blue;
+  }
+}
+
+h1.hero-title
+h2.hero-title {
+  div.bottom-title-2nd ~ div.bottom-title {
+    padding-top: 25px !important;
+  }
+}
+
+.page-id-87 .scanner {
+  margin-top: 20px;
+  min-height: 340px;
+}
+
+.scanner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  width: 35%;
+  min-height: 300px;
+
+  @media screen and (max-width: 1500px) {
+    min-height: 240px;
+  }
+}
+
+.hero-bottom-content {
+  text-align: right;
+  width: 61%;
+  float: right;
+  min-height: 280px;
+
+  @media screen and (max-width: 1500px) {
+    min-height: 240px;
+  }
+}
+
+span#hh-sub2 {
+  p {
+    font-size: 1.4em;
+    color: rgba(64, 64, 64, 0.75);
+    margin: 0 auto;
+  }
+}
+
+.hero-bottom-wrapper {
+  display: flex;
+  margin: 2em 0;
+}
+
+/***********************************
+#   For Smaller Size of Hero Header
+***********************************/
+
+.hero-header.small {
+
+  div#postTitlewrap {
+
+    h2 {
+      padding-top: 20%;
+      width: 80%;
+      margin: auto;
+    }
+    width: 50%;
+    margin-left: calc(50% - 325px);
+    &:after {
+      left: calc(50% + 51px);
+      height: calc(50% + 331px);
+      top: -42px;
+    }
+  }
+
+  div#imageTitle {
+    min-height: 400px;
+    background-position: center center;
+  }
+
+  div#postTitle {
+    width: 961px;
+    height: calc(100% + 100px);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: calc(50% - 870px);
+    &:after {
+      width: calc(100% + 251px);
+      height: 6px;
+      right: -637px;
+      bottom: -4px;
+    }
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      left: calc(50% - 730px);
+    }
+    @media screen and (max-width: $breakpoint-small-desktop) {
+      left: calc(50% - 630px);
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+      left: calc(50% - 530px);
+    }
+  }
+
+  span#hh-sub1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #0c416d;
+    height: 1px;
+    width: 240px;
+    left: 29%;
+  }
+}
+
+.hero-header.small > .container {
+  margin-top: -2em;
+}
+
+/********************************
+#   End small Hero Header
+********************************/
+
+/********************************
+#   Hero Overlay Styles
+********************************/
+
+.hero-overlay {
+  float: right;
+  max-width: calc(50% - 140px);
+  min-height: 400px;
+  margin-right: -100px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 230px solid transparent;
+    border-bottom: 400px solid rgba(255, 255, 255, 0.8);
+    left: calc(0% - 230px);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 500%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 100%;
+  }
+  .overlay-image-wrapper {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/********************************
+#   End Hero Overlay Styles
+********************************/
+
+.vid-image {
+  max-width: 30%;
+  width: 30%;
+  float: left;
+  min-height: 260px;
+  background: #f3f3f5;
+
+  a {
+    width: 100%;
+    min-height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+
+span.fa.fa-play-circle-o.fa-4x {
+  color: $dark_blue;
+}
+
+@media screen and (max-width: 1200px) {
+
+  div#postTitle {
+    width: 737px;
+    height: calc(100% + 54px);
+
+    &:after {
+      width: calc(100% + 272px);
+    }
+  }
+
+  div#postTitlewrap:after {
+    top: -144px;
+    height: calc(50% + 422px);
+    left: calc(50% + 161px);
+  }
+
+  div#content {
+    margin-top: 115px;
+  }
+
+  span#hh-sub1 p {
+    line-height: 1.3;
+    max-width: 60%;
+    font-size: 1.2rem;
+  }
+}
+
+/************************
+*     TEST PRODUCT STYLES
+*************************/
+
+.test-product {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home {
+  div#postTitle:after {
+    right: -645px;
+    width: calc(100% + 196px);
+  }
+
+  div#postTitlewrap:after {
+    height: calc(50% + 462px);
+    left: calc(50% + 171px);
+  }
+
+  h1.hero-title .bottom-title {
+    padding-top: 25px;
+  }
+}

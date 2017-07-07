@@ -1,0 +1,114 @@
+.page-template-page-sidebar {
+
+  &.page-id-181 {
+    aside#secondary {
+      margin-top: 0;
+    }
+  }
+
+
+    aside#secondary {
+      text-align: left;
+      a{
+        color: #404040;
+      }
+
+      .small-cta {
+        a {
+          width: 100%;
+        }
+      }
+    }
+
+
+  .sidebar-page-wrapper {
+    width: 70%;
+    float: left;
+    margin-right: 4em;
+  }
+
+  aside#secondary {
+    max-width: calc(30% - 4em);
+    width: calc(30% - 4em);
+    float: right;
+  }
+
+  section#text-4 {
+    p {
+      margin-top: 5px;
+      font-size: 1.1em;
+    }
+  }
+
+  .sidebar-title {
+    a {
+      text-decoration: none;
+      h3 {
+        font-size: 1.5em;
+        line-height: 1.2;
+        border-bottom: 1px solid $med_blue;
+        padding-bottom: 7px;
+        color: $dark_blue;
+      }
+    }
+  }
+
+  .sidebar-list-wrapper {
+    ul {
+      padding: 0;
+      a {
+        text-decoration: none;
+        color: #404040;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+  }
+}
+
+/*************************
+* Global Blue CTA Styles
+*************************/
+
+.small-cta {
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: $light_blue;
+  a {
+    line-height: 1;
+    padding: 22px 70px;
+    z-index: 999;
+    text-decoration: none;
+  }
+  h4 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 1.6em;
+    color: #fff;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 45px solid $dark_blue;
+    left: 11px;
+  }
+  .small-cta-small {
+    h5 {
+      margin: 0;
+      color: #fff;
+      font-size: 1.3em;
+      font-weight: 100;
+    }
+  }
+}
+
+/***********************
+***********************/

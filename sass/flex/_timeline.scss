@@ -1,0 +1,122 @@
+body .wpex-timeline-list {
+
+  margin-bottom: 90px;
+
+  &.show-icon {
+
+    ul.wpex-timeline.style-center {
+      > li {
+        &:nth-child(odd) {
+          .wpex-timeline-label {
+
+            display: flex;
+            border: none;
+            box-shadow: none;
+            flex-direction: row-reverse;
+
+            &:after {
+
+              border: none;
+              width: 35px;
+              background: $med_blue;
+              height: 6px;
+              right: calc(0% - 70px);
+            }
+            &:before {
+              display: none;
+            }
+          }
+        }
+        &:nth-child(even) {
+          .wpex-timeline-label {
+
+            display: flex;
+            border: none;
+            box-shadow: none;
+
+            &:after {
+              border: none;
+              width: 35px;
+              background: $med_blue;
+              height: 6px;
+              left: calc(0% - 70px);
+            }
+
+            &:before {
+              display: none;
+
+            }
+
+            .timeline-details {
+              flex-direction: row-reverse;
+
+              .img-left {
+                float: right;
+              }
+            }
+          }
+        }
+
+        .wpex-content-left {
+          margin: 0;
+          width: auto;
+
+          .wpex-leftdate {
+            padding: 0;
+            background: none !important;
+            color: $med_blue;
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          .tlday {
+            font-size: 2.5em;
+            margin: 0;
+            padding-right: 10px;
+            line-height: inherit;
+
+            + div > span {
+
+              font-size: 2.5em;
+
+              &:first-of-type {
+                display: none !important;
+              }
+            }
+          }
+        }
+      }
+
+      li {
+        .wpex-timeline-icon {
+          .fa {
+            display: none;
+          }
+        }
+      }
+    }
+
+    ul.wpex-timeline {
+      > li {
+        &::after, &:first-child::before {
+          width: 6px;
+        }
+
+      }
+    }
+  }
+
+  .wpex-tltitle.wpex-loadmore {
+    display: none;
+  }
+
+  .wpex-loadmore.wpex-endlabel {
+    display: none;
+  }
+}
+
+
+.wpex-timeline-list.show-icon .style-center > li .wpex-timeline-label .timeline-details {
+  padding: 0;
+  width: 100%;
+}
